@@ -1,8 +1,7 @@
 from app.cinema.bar import CinemaBar
 from app.cinema.hall import CinemaHall
-from people.customer import Customer
-from people.cinema_staff import Cleaner
-
+from app.people.customer import Customer
+from app.people.cinema_staff import Cleaner
 
 
 def cinema_visit(customers: list, hall_number: int, cleaner: str, movie: str):
@@ -20,5 +19,3 @@ def cinema_visit(customers: list, hall_number: int, cleaner: str, movie: str):
             customers=customer_instances,
             cleaning_staff=cleaner_staff
         )
-
-
